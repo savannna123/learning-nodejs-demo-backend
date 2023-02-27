@@ -1,0 +1,30 @@
+{
+//ts编译器配置文件
+
+/*
+  指定需要编译的文件
+  其中，**表示任意目录  *表示任意文件
+ */
+  "include": [
+    "./src/**/*"
+  ],
+/*
+  不需要编译的文件
+  有默认值["node_modules", "bower_components", "jspm_packages"]
+ */
+  "exclude": [
+    "./learning/**/*"
+  ],
+  //继承配置文件
+  "extends": [],
+  //类似include
+  "files": [
+    "app.ts"
+  ],
+  //如何编译
+  "compilerOptions": {
+    //指定被编译成的版本
+    "target": "ES3",
+
+  }
+}
