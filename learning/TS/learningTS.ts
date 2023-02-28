@@ -66,7 +66,7 @@ r = {
 }
 
 //二、类型间关系
-let s: { name: string } & { age: number };//表示对象必须有这两个属性 ？？为什么用&表示 不用obj声明
+let s: { name: string } & { age: number };//todo 表示对象必须有这两个属性 ？？为什么用&表示 不用obj声明
 
 //三、类型别名 type
 type example = number | string | boolean;
