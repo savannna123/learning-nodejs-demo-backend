@@ -22,9 +22,10 @@ const writeFilePro = (file, data) => {
 const getDogPic = async () => {
   try {
     const data = await readFilePro(`${__dirname}/dog.txt`);
-    const res = await superagent.get(`https://dog.ceo/api/breed/${data.toString().replace(/[\r\n]/g, "")}/images/random`);
+    const res =  await superagent.get(`https://dog.ceo/api/breed/${data.toString().replace(/[\r\n]/g, "")}/images/random`);
     console.log(res.body.message);
-    await writeFilePro(`${__dirname}/dog.txt`, res.body.message);
+    console.log(typeof res);
+    await writeFilePro(`dog-image.txt`, res.body.message);
   } catch (e) {
     //在这里err只是被打印，并没有被标记为reject
     throw e;
@@ -38,3 +39,4 @@ getDogPic()
   //所以这里catch不到err
   console.log("错了"+e);
 });
+
