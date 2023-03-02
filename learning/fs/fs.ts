@@ -19,3 +19,4 @@ fs.readFile('./data1.txt', 'utf-8',
     }
 );
 console.log("异步写完了");
+export {};

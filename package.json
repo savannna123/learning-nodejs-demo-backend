@@ -2,5 +2,9 @@
   "name": "demo",
   "version": "1.0.0",
   "dependencies": {
+    "superagent": "^8.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.2"
   }
 }
