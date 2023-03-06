@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended:false}));//url转json
 
 app.use(indexRoutes);
 app.listen(3000,()=>{
-  console.log("???")
+  console.log("this is 入口")
 });
 
 
