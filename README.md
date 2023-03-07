@@ -22,3 +22,4 @@ https://ithelp.ithome.com.tw/articles/10249211
 6. 在repo层 catch住error(可能出现连接问题)
 7. 注意git ignore
 8. 数据库连接通过环境变量配置
+9. .idea不要上传
